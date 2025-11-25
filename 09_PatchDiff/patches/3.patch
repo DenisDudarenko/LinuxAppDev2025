@@ -1,0 +1,27 @@
+--- src/labyrinth_old.c	2025-12-15 23:25:52.390300435 +0000
++++ src/labyrinth.c	2025-12-15 23:29:47.515686712 +0000
+@@ -49,18 +49,18 @@
+ 
+ int main(int argc, char **argv)
+ {
+-    if (argc < 3)
++    if (argc < 4)
+         exit(1);
+     
+-    space = argv[1][0];
+-    wall = argv[1][1];
++    unsigned seed = (unsigned)strtoul(argv[1], NULL, 10);
++    srand(seed);
++    space = argv[2][0];
++    wall = argv[2][1];
+ 
+-    n = atoi(argv[2]);
++    n = atoi(argv[3]);
+     H = 2 * n + 1;
+     W = 2 * n + 1;
+ 
+-    srand((unsigned)time(NULL));
+-
+     g = malloc((size_t)H * (size_t)(W + 1));
+     vis = calloc((size_t)n * n, 1);
+ 

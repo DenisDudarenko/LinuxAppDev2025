@@ -1,0 +1,52 @@
+--- src/labyrinth_old.c	2025-12-15 23:24:47.912012346 +0000
++++ src/labyrinth.c	2025-12-15 23:25:17.652683976 +0000
+@@ -5,6 +5,8 @@
+ static int n, H, W;
+ static char *g;
+ static unsigned char *vis;
++static char space = '.';
++static char wall = '#';
+ 
+ static void shuffle(int d[4])
+ {
+@@ -20,7 +22,7 @@
+     int gr2 = 2 * r2 + 1, gc2 = 2 * c2 + 1;
+     int wr = (gr1 + gr2) / 2;
+     int wc = (gc1 + gc2) / 2;
+-    g[wr * (W + 1) + wc] = '.';
++    g[wr * (W + 1) + wc] = space;
+ }
+ 
+ static void dfs(int r, int c)
+@@ -47,9 +49,13 @@
+ 
+ int main(int argc, char **argv)
+ {
+-    if (argc < 2)
++    if (argc < 3)
+         exit(1);
+-    n = atoi(argv[1]);
++    
++    space = argv[1][0];
++    wall = argv[1][1];
++
++    n = atoi(argv[2]);
+     H = 2 * n + 1;
+     W = 2 * n + 1;
+ 
+@@ -59,13 +65,13 @@
+     vis = calloc((size_t)n * n, 1);
+ 
+     for (int r = 0; r < H; r++) {
+-        for (int c = 0; c < W; c++) g[r * (W + 1) + c] = '#';
++        for (int c = 0; c < W; c++) g[r * (W + 1) + c] = wall;
+         g[r * (W + 1) + W] = '\0';
+     }
+ 
+     for (int r = 0; r < n; r++)
+         for (int c = 0; c < n; c++)
+-            g[(2 * r + 1) * (W + 1) + (2 * c + 1)] = '.';
++            g[(2 * r + 1) * (W + 1) + (2 * c + 1)] = space;
+ 
+     dfs(0, 0);
+ 

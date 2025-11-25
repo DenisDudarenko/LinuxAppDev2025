@@ -1,0 +1,16 @@
+--- src/labyrinth_old.c	2025-12-15 23:13:21.839587415 +0000
++++ src/labyrinth.c	2025-12-15 23:17:28.879859801 +0000
+@@ -45,9 +45,11 @@
+     }
+ }
+ 
+-int main(void)
++int main(int argc, char **argv)
+ {
+-    n = 6;
++    if (argc < 2)
++        exit(1);
++    n = atoi(argv[1]);
+     H = 2 * n + 1;
+     W = 2 * n + 1;
+ 
