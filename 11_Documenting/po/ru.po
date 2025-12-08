@@ -1,0 +1,123 @@
+# Russian translations for  08_I18n package.
+# Copyright (C) 2025 THE  08_I18n'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the  08_I18n package.
+# Денис Дударенко <v0bia@linuxprac.box.office.basealt.ru>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version:  08_I18n\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-16 13:52+0000\n"
+"PO-Revision-Date: 2025-12-15 20:19+0000\n"
+"Last-Translator: Денис Дударенко <v0bia@linuxprac.box.office.basealt.ru>\n"
+"Language-Team: Russian <gnu@d07.ru>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: /home/v0bia/LinuxAppDev2025/11_Documenting/src/guess.c:70
+#, c-format
+msgid ""
+"Usage: %s [-r]\n"
+"\n"
+msgstr ""
+"Использование: %s [-r]\n"
+"\n"
+
+#: /home/v0bia/LinuxAppDev2025/11_Documenting/src/guess.c:72
+#, c-format
+msgid "Options:\n"
+msgstr "Настройки:\n"
+
+#: /home/v0bia/LinuxAppDev2025/11_Documenting/src/guess.c:73
+#, c-format
+msgid "  -r      Use Roman digits\n"
+msgstr "  -r     Использовать римские цифры\n"
+
+#: /home/v0bia/LinuxAppDev2025/11_Documenting/src/guess.c:74
+#, c-format
+msgid "  -h      Show help message\n"
+msgstr "  -h     Показать сообщение с информацией\n"
+
+#: /home/v0bia/LinuxAppDev2025/11_Documenting/src/guess.c:75
+#, c-format
+msgid ""
+"  --help  Show help message\n"
+"\n"
+msgstr ""
+"  --help  Показать сообщение с информацией\n"
+"\n"
+
+#: /home/v0bia/LinuxAppDev2025/11_Documenting/src/guess.c:77
+#, c-format
+msgid "Game:\n"
+msgstr "Правила игры:\n"
+
+#: /home/v0bia/LinuxAppDev2025/11_Documenting/src/guess.c:78
+#, c-format
+msgid "Think of a number from 1 to 100. I will guess it\n"
+msgstr "Загадайте число от 1 до 100. Я его угадаю\n"
+
+#: /home/v0bia/LinuxAppDev2025/11_Documenting/src/guess.c:79
+#, c-format
+msgid ""
+"Answer only: Yes or No\n"
+"\n"
+msgstr ""
+"Вводите только 'Да' или 'Нет'\n"
+"\n"
+
+#: /home/v0bia/LinuxAppDev2025/11_Documenting/src/guess.c:101
+msgid "Unknow argument"
+msgstr "Неизвестный аргумент"
+
+#: /home/v0bia/LinuxAppDev2025/11_Documenting/src/guess.c:102
+msgid "For help use --help"
+msgstr "Для помощи использвуйте --help"
+
+#: /home/v0bia/LinuxAppDev2025/11_Documenting/src/guess.c:107
+msgid "Get a number from I to C. I will guess it"
+msgstr "Загадайте число от 1 до 100. Я его угадаю"
+
+#: /home/v0bia/LinuxAppDev2025/11_Documenting/src/guess.c:109
+msgid "Get a number from 1 to 100. I will guess it"
+msgstr "Загадайте число от 1 до 100. Я его угадаю"
+
+#: /home/v0bia/LinuxAppDev2025/11_Documenting/src/guess.c:118
+#, c-format
+msgid "Is your number greater than %d? (Yes/No): "
+msgstr "Ваше число больше %d? (Да/Нет): "
+
+#: /home/v0bia/LinuxAppDev2025/11_Documenting/src/guess.c:121
+#, c-format
+msgid "Is your number greater than %s? (Yes/No): "
+msgstr "Ваше число больше %d? (Да/Нет): "
+
+#: /home/v0bia/LinuxAppDev2025/11_Documenting/src/guess.c:127
+msgid "Error. EOF"
+msgstr "Ошибка: EOF"
+
+#: /home/v0bia/LinuxAppDev2025/11_Documenting/src/guess.c:131
+msgid "Yes"
+msgstr "Да"
+
+#: /home/v0bia/LinuxAppDev2025/11_Documenting/src/guess.c:132
+msgid "No"
+msgstr "Нет"
+
+#: /home/v0bia/LinuxAppDev2025/11_Documenting/src/guess.c:134
+msgid "Invalid answer, type only 'Yes' or 'No'\n"
+msgstr "Неверный ответ, вводите только 'Да' или 'Нет'\n"
+
+#: /home/v0bia/LinuxAppDev2025/11_Documenting/src/guess.c:138
+#, c-format
+msgid "Your number is %d\n"
+msgstr "Ваше число: %d\n"
+
+#: /home/v0bia/LinuxAppDev2025/11_Documenting/src/guess.c:141
+#, c-format
+msgid "Your number is %s\n"
+msgstr "Ваше число: %d\n"
