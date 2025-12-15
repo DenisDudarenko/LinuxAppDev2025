@@ -1,0 +1,57 @@
+/**
+ * @mainpage numberstat
+ *
+ * @section about Описание
+ * Учебный проект: библиотека + утилита numberstat, локализация, unit-тесты, manpage, Doxygen, install/uninstall. Программа numberstat показывает число в виде римскиого, двоичного и других представлений. При передаче определенного флага она выводит только ответ выбранного формата
+ *
+ * @section build Сборка
+ * @code
+ * cmake -S . -B build
+ * cmake --build build
+ * @endcode
+ *
+ * @section run Запуск
+ * Без установки:
+ * @code
+ * ./build/src/numberstat 12
+ * @endcode
+ *
+ * После установки в /tmp/qq:
+ * @code
+ * /tmp/qq/bin/numberstat 12
+ * export PATH="/tmp/qq/bin:$PATH"
+ * numberstat 12
+ * @endcode
+ *
+ * @section tests Тесты
+ * @code
+ * cmake --build build --target run_tests
+ * @endcode
+ *
+ * @section install_user Установка без root (в /tmp/qq)
+ * @code
+ * cmake -S . -B build -DCMAKE_INSTALL_PREFIX=/tmp/qq
+ * cmake --build build
+ * cmake --install build
+ * MANPATH=/tmp/qq/share/man man numberstat
+ * @endcode
+ *
+ * @section install_root Установка в систему (root)
+ * @code
+ * cmake -S . -B build -DCMAKE_INSTALL_PREFIX=/usr/local
+ * cmake --build build
+ * su -c "cmake --install build"
+ * man numberstat
+ * @endcode
+ *
+ * @section uninstall Деинсталляция
+ * @code
+ * cmake --build build --target uninstall
+ * @endcode
+ *
+ * @section locale Локали
+ * @code
+ * LANG=ru_RU.UTF-8 numberstat 12
+ * LANG=C numberstat 12
+ * @endcode
+ */
